@@ -1,7 +1,8 @@
 from django.urls import path, re_path
 from . import views
 from django.views.generic import RedirectView
-
+from . import dash_plots
+from . import dash_table
 
 urlpatterns = [
     path('', views.start, name='start'),

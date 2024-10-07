@@ -137,7 +137,7 @@ def scrap_upcoming_games(league):
     elif league == 3:
         return pd.DataFrame({'Date': ["23/05/2021", "23/05/2021"],
                                 'Time': ["16:00", "16:00"],
-                                'HomeTeam': ["Sevilla", "Athletic Bilbao"],
+                                'HomeTeam': ["Sevilla", "Ath Bilbao"],
                                 'AwayTeam': ["Getafe", "Real Madrid"],
                                 'HomeWinOdds': ["1.36", "2.55"],
                                 'DrawOdds': ["2.22", "2.89"],

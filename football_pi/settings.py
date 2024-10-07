@@ -28,6 +28,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+     'django_plotly_dash.middleware.BaseMiddleware',
 ]
 
 ROOT_URLCONF = 'football_pi.urls'
@@ -92,8 +93,7 @@ STATICFILES_FINDERS = [
 ]
 
 PLOTLY_COMPONENTS = [
-    'dash_core_components',
-    'dash_html_components',
+    'dash',
     'dash_renderer',
     'dpd_components'
 ]

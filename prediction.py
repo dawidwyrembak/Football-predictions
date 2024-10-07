@@ -1,11 +1,10 @@
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.linear_model import LogisticRegression
-from tensorflow import keras
-from tensorflow.python.keras import Sequential
-from tensorflow.python.keras.layers import Dense, Dropout
+from tensorflow.keras import Sequential
+from tensorflow.keras.layers import Dense, Dropout
 from preprocess import *
 import tensorflow as tf
-from tensorflow.python.keras.utils.np_utils import to_categorical
+from tensorflow.keras.utils import to_categorical
 import pandas as pd
 import matplotlib.pyplot as plt
 from matplotlib import cm
@@ -55,7 +54,7 @@ class Prediction:
                 model.add(Dense(32, activation=tf.nn.relu, kernel_regularizer=tf.keras.regularizers.l2(l=0.1)))
                 model.add(Dense(3, activation=tf.nn.softmax))
 
-                model.compile(loss='categorical_crossentropy', optimizer=keras.optimizers.Adam(lr=0.01),
+                model.compile(loss='categorical_crossentropy', #optimizer=keras.optimizers.Adam(lr=0.01),
                               metrics=['accuracy'])
 
                 model.summary()
@@ -68,7 +67,7 @@ class Prediction:
                 model.add(Dense(32, activation=tf.nn.relu, kernel_regularizer=tf.keras.regularizers.l2(l=0.1)))
                 model.add(Dense(3, activation=tf.nn.softmax))
 
-                model.compile(loss='categorical_crossentropy', optimizer=keras.optimizers.Adam(lr=0.01),
+                model.compile(loss='categorical_crossentropy', #optimizer=keras.optimizers.Adam(lr=0.01),
                               metrics=['accuracy'])
 
                 model.summary()
@@ -81,7 +80,7 @@ class Prediction:
                 model.add(Dense(32, activation=tf.nn.relu, kernel_regularizer=tf.keras.regularizers.l2(l=0.1)))
                 model.add(Dense(3, activation=tf.nn.softmax))
 
-                model.compile(loss='categorical_crossentropy', optimizer=keras.optimizers.Adam(lr=0.01),
+                model.compile(loss='categorical_crossentropy', #optimizer=keras.optimizers.Adam(lr=0.01),
                               metrics=['accuracy'])
 
                 model.summary()
